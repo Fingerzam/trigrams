@@ -4,8 +4,7 @@
 
 (facts "of trigrams"
   (trigrams "foo bar baz quux")     => {["foo" "bar"] ["baz"], ["bar" "baz"] ["quux"]}
-  (trigrams "foo bar baz
-            quux")     => {["foo" "bar"] ["baz"], ["bar" "baz"] ["quux"]}
+  (trigrams "foo bar baz\nquux")    => {["foo" "bar"] ["baz"], ["bar" "baz"] ["quux"]}
   (trigrams "foo  bar baz")         => {["foo" "bar"] ["baz"]}
   (trigrams "foo bar foo bar quux") => (contains {["foo" "bar"] ["foo" "quux"], ["bar" "foo"] ["bar"]})
   (trigrams "foo bar")              => {}
