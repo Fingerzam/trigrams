@@ -1,6 +1,6 @@
 # trigrams
 
-FIXME: write description
+http://codekata.pragprog.com/2007/01/kata_fourteen_t.html
 
 ## Usage
 
